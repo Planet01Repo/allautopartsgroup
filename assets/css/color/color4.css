@@ -1,0 +1,113 @@
+#hideSwitcher {
+    color: #fff;
+}
+
+.btn-3:hover,
+a.popup-video,
+.portfolio-pop a,
+.khalif-content-box h2,
+.about-exprience h3 span,
+.about2-exprience h3 span,
+.about-short-brief h2 span,
+.single-post-info li:hover,
+.post-details-info li:hover,
+.main-menu nav>ul>li:hover>a,
+ul.header-cta-btn li a:hover,
+ul.footer-social li:hover a i,
+.about2-short-brief h2 span,
+.wdg-post-archive li:hover a,
+.single-post-info li:hover a,
+.post-details-info li:hover a,
+.main-menu nav>ul>li.active>a,
+ul.portfolio-menu-wrape li:hover,
+ul.khalif-hero-social li:hover a,
+ul.portfolio-menu-wrape li.active,
+ul.portfolio-menu-wrape li.active,
+.single-services-wrape:hover h3 a,
+.all-testimonial .owl-nav div:hover,
+.single-awards-list:hover .awards-web,
+ul.footer-contact-info li span:before,
+.single-sid-wdg .widget_meta ul li:hover a,
+.single-wdg-post:hover .wdg-post-content h5 a,
+.khalif-single-blog-wrape:hover h4 a.post-title,
+.khalif-offcanvas-mobile-menu-area nav>ul>li:hover>a,
+.khalif-offcanvas-mobile-menu-area nav>ul>li.active>a,
+.khalif-breadcrumb-content .breadcrumb .breadcrumb-item a,
+.khalif-footer-single-widget .widget_nav_menu .menu li a:hover {
+    color: #FF5722 !important;
+}
+
+.btn-2,
+.btn-2:hover,
+.btn-4:hover,
+#hideSwitcher,
+.single-count-box,
+blockquote cite:before,
+button.submit-btn:hover,
+.contact-info-box:hover,
+.single-price-area:hover,
+.single-price-area.active,
+.post-details-tag>a:hover,
+.main-menu nav>ul>li:after,
+.main-menu nav>ul>li:after,
+.main-menu nav>ul>li:before,
+.main-menu nav>ul>li:before,
+.offcanvas-social ul li a:hover,
+ul.team-social-wrape li:hover a,
+.main-menu nav>ul>li.active:after,
+.main-menu nav>ul>li.active:before,
+.khalif-subscribe-content h2:after,
+.khalif-pagination .nav-links a:hover,
+blockquote.wp-block-quote cite:before,
+.khalif-pagination .nav-links a.current,
+.single-awards-list:hover .awards-number,
+.single-awards-list:hover .awards-link a,
+.khalif-pagination .nav-links span:hover,
+.khalif-pagination .nav-links span.current,
+.khalif-footer-style-shape .footer-shape-1,
+.khalif-footer-style-shape .footer-shape-2,
+.khalif-accordian-wrapeer .card-header.btn-link,
+.single-sid-wdg .widget_tag_cloud .tagcloud a:hover,
+.khalif-all-team-area .active.center .team-popup-wrape a,
+.khalif-offcanvas-mobile-menu-area nav>ul>li:hover>.sub-menu li>a:hover {
+    background: #FF5722 !important;
+}
+
+blockquote,
+.counter-circle,
+.btn-2:hover:after,
+.comments-avatar img,
+.comments-box:hover,
+.single-sid-wdg:hover,
+.single-wdg-post:hover,
+.post-details-tag>a:hover,
+.single-awards-list:hover,
+blockquote.wp-block-quote,
+.main-menu nav>ul>li .sub-menu,
+ul.team-social-wrape li:hover a,
+.single-services-wrape:hover ::before,
+.post-comments-form input.form-control:focus,
+.post-comments-form textarea.form-control:focus,
+.single-sid-wdg .widget_tag_cloud .tagcloud a:hover,
+.khalif-offcanvas-mobile-menu-area nav>ul>li .sub-menu,
+.khalif-all-blog-list.owl-theme .owl-dots .owl-dot span,
+.khalif-all-blog-list.owl-theme .owl-dots .owl-dot.active span {
+    border-color: #FF5722 !important;
+}
+
+.single-awards-list:hover .awards-number::after {
+    border-top-color: #FF5722;
+}
+
+.btn-3:hover svg,
+.single-testimonial-content svg,
+.single-price-area:hover .price-icon svg,
+.single-price-area.active .price-icon svg,
+.single-services-wrape:hover .services-style-shape svg,
+.single-services-wrape:hover .single-services-icon span svg {
+    fill: #FF5722 !important;
+}
+
+.progress-wrap svg.progress-circle path {
+    stroke: #FF5722;
+}
