@@ -722,7 +722,7 @@ ul.header-cta-btn li {
     background-attachment: inherit;
     position: relative;
     min-height: 100vh;
-    background-image: url(assets/img/hero/1.jpg);
+    background-image: url(assets/img/all-auto-parts-group.jpg);
     background-color: #1a2b3c;
     background-repeat: no-repeat;
     z-index: 1;
@@ -2767,4 +2767,7 @@ ul.footer-social li a i {
     position: relative;
     margin-bottom: 4px;
     padding-left: 8px;
+}
+.fill-grey{
+    filter: grayscale(1);
 }
