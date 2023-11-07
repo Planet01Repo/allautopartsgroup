@@ -2771,3 +2771,9 @@ ul.footer-social li a i {
 .fill-grey{
     filter: grayscale(1);
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .custom-width-mobile-logo{
+        width: 50% !important;
+    }
+}
