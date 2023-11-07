@@ -2776,4 +2776,7 @@ ul.footer-social li a i {
     .custom-width-mobile-logo{
         width: 50% !important;
     }
+    .header-logo{
+        float: none !important;
+    }
 }
