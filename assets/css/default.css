@@ -22,11 +22,14 @@
 }
 
 .bgc-2 {
+    background-color: #ffffff !important;
+}
+.dark .bgc-2 {
     background-color: #070707 !important;
 }
 
 .bgc-3 {
-    background-color: #FF433C !important;
+    background-color: red !important;
 }
 
 .bgc-4 {
@@ -52,7 +55,7 @@
 /* switcher background color */
 
 .sbgc-1 {
-    background-color: #FF433C !important;
+    background-color: red !important;
 }
 .sbgc-2 {
     background-color: #2196F3 !important;
@@ -191,7 +194,7 @@
     color: #fff;
     border-color: #fff;
     opacity: 0.851;
-    background: #FF433C;
+    background: red;
 }
 
 .khalif-tab li a {

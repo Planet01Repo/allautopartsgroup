@@ -34,7 +34,7 @@ ul.footer-contact-info li span:before,
 .khalif-offcanvas-mobile-menu-area nav>ul>li.active>a,
 .khalif-breadcrumb-content .breadcrumb .breadcrumb-item a,
 .khalif-footer-single-widget .widget_nav_menu .menu li a:hover {
-    color: #FF433C !important;
+    color: red;
 }
 
 .btn-2,
@@ -70,7 +70,7 @@ blockquote.wp-block-quote cite:before,
 .single-sid-wdg .widget_tag_cloud .tagcloud a:hover,
 .khalif-all-team-area .active.center .team-popup-wrape a,
 .khalif-offcanvas-mobile-menu-area nav>ul>li:hover>.sub-menu li>a:hover {
-    background: #FF433C !important;
+    background: red;
 }
 
 blockquote,
@@ -92,11 +92,11 @@ ul.team-social-wrape li:hover a,
 .khalif-offcanvas-mobile-menu-area nav>ul>li .sub-menu,
 .khalif-all-blog-list.owl-theme .owl-dots .owl-dot span,
 .khalif-all-blog-list.owl-theme .owl-dots .owl-dot.active span {
-    border-color: #FF433C !important;
+    border-color: red;
 }
 
 .single-awards-list:hover .awards-number::after {
-    border-top-color: #FF433C;
+    border-top-color: red;
 }
 
 .btn-3:hover svg,
@@ -105,9 +105,9 @@ ul.team-social-wrape li:hover a,
 .single-price-area.active .price-icon svg,
 .single-services-wrape:hover .services-style-shape svg,
 .single-services-wrape:hover .single-services-icon span svg {
-    fill: #FF433C !important;
+    fill: red;
 }
 
 .progress-wrap svg.progress-circle path {
-    stroke: #FF433C;
+    stroke: red;
 }

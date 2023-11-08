@@ -48,6 +48,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&amp;family=Jost:wght@400;500;600;700&amp;display=swap');
 
 /* theme default area css */
+/* Light Mode Styles */
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    /* Add other light mode styles */
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    --background-color: #222;
+    --text-color: #fff;
+    /* Add other dark mode styles */
+  }
+  
+  /* Common Styles (Apply to both modes) */
+  body {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    /* Add other common styles */
+  }
+  
 * {
     margin: 0px;
     padding: 0px;
@@ -118,8 +139,17 @@ h4,
 h5,
 h6 {
     font-family: 'Antonio', sans-serif;
-    color: #fff;
+    color: #141414;
     font-style: normal;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+    color: #fff;
 }
 
 h1 a,
@@ -146,6 +176,10 @@ p {
     font-size: 18px;
     font-weight: 400;
     line-height: 40px;
+    color: #141414;
+}
+
+.dark p{
     color: #fff;
 }
 
@@ -334,10 +368,13 @@ label {
 
 /* header area css */
 .khalif-main-manu-content {
-    background: rgb(68 68 68 / 20%);
+    background: rgb(0 0 0 / 50%);
     border-radius: 70px;
     padding: 0px 50px;
     height: 100px;
+}
+.dark .khalif-main-manu-content{
+    background: rgb(68 68 68 / 20%);
 }
 
 .sticky {
@@ -351,6 +388,9 @@ label {
     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     background: #000000;
     transition: .3s;
+}
+.dark .sticky{
+    background: #000000 !important;
 }
 
 .khalif-header-wrape {
@@ -377,7 +417,7 @@ ul.header-cta-btn li a {
 }
 
 ul.header-cta-btn li a:hover {
-    color: #FF433C;
+    color: red;
 }
 
 ul.header-cta-btn li a i {
@@ -385,7 +425,9 @@ ul.header-cta-btn li a i {
 }
 
 ul.header-cta-btn {
-    margin: 40px 0;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
 }
 
 ul.header-cta-btn li {
@@ -444,7 +486,7 @@ ul.header-cta-btn li {
     right: 0;
     bottom: 0;
     height: 3px;
-    background: #FF433C;
+    background: red;
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
@@ -464,7 +506,7 @@ ul.header-cta-btn li {
     left: 0;
     top: 0px;
     height: 3px;
-    background: #FF433C;
+    background: red;
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
@@ -499,13 +541,13 @@ ul.header-cta-btn li {
 
 .main-menu nav>ul>li:hover>a,
 .main-menu nav>ul>li.active>a {
-    color: #FF433C;
+    color: red;
 }
 
 /* sub menu */
 .main-menu nav>ul>li .sub-menu {
     background: #ffffff none repeat scroll 0 0;
-    border-top: 3px solid #FF433C;
+    border-top: 3px solid red;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
     left: 0;
     opacity: 0;
@@ -582,7 +624,7 @@ ul.header-cta-btn li {
 }
 
 .mobile-menu:hover {
-    color: #FF433C;
+    color: red;
 }
 
 .khalif-offcanvas-mobile-menu-area nav {
@@ -619,12 +661,12 @@ ul.header-cta-btn li {
 
 .khalif-offcanvas-mobile-menu-area nav>ul>li:hover>a,
 .khalif-offcanvas-mobile-menu-area nav>ul>li.active>a {
-    color: #FF433C;
+    color: red;
 }
 
 .khalif-offcanvas-mobile-menu-area nav>ul>li .sub-menu {
     background: #ffffff none repeat scroll 0 0;
-    border-top: 3px solid #FF433C;
+    border-top: 3px solid red;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
     left: 0;
     right: 0;
@@ -663,12 +705,12 @@ ul.header-cta-btn li {
 
 .khalif-offcanvas-mobile-menu-area nav>ul>li:hover>.sub-menu li>a:hover {
     color: #fff;
-    background: #FF433C;
+    background: red;
 }
 
 .khalif-offcanvas-mobile-menu-area nav>ul>li>.sub-menu>li>.sub-menu {
     background: #ffffff none repeat scroll 0 0;
-    border-top: 3px solid #FF433C;
+    border-top: 3px solid red;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
     left: 100%;
     opacity: 0;
@@ -712,7 +754,7 @@ ul.header-cta-btn li {
 
 .offcanvas-social ul li a:hover {
     color: #fff;
-    background: #FF433C;
+    background: red;
 }
 
 /* hero area css */
@@ -735,8 +777,11 @@ ul.header-cta-btn li {
     top: 0;
     right: 0;
     bottom: 0;
-    background: rgb(0 0 0 / 80%);
+    background: rgb(96 96 96 / 50%);
     z-index: -1;
+}
+.dark .hero-bg:before{
+    background: rgb(0 0 0 / 80%);
 }
 
 .hero-content {
@@ -767,7 +812,7 @@ ul.khalif-hero-social li a {
 }
 
 ul.khalif-hero-social li:hover a {
-    color: #FF433C;
+    color: red;
 }
 
 ul.khalif-hero-social li a:after {
@@ -782,7 +827,7 @@ ul.khalif-hero-social li a:after {
 }
 
 .hero-content h1 {
-    font-size: 100px;
+    font-size: 90px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -829,10 +874,12 @@ h2.style-title {
     align-items: center;
     gap: 26px;
 }
-
+.dark .about-exprience{
+    color: #fff;
+}
 .about-exprience {
     font-size: 32px;
-    color: #fff;
+    color: #000000;
     text-transform: capitalize;
     font-weight: 400;
     font-family: 'Antonio', sans-serif;
@@ -847,7 +894,7 @@ h2.style-title {
 
 .about-exprience h3 span {
     font-weight: 700;
-    color: #FF433C;
+    color: red;
 }
 
 .about-style-title {
@@ -878,7 +925,7 @@ h2.style-title {
 }
 
 .about-short-brief h2 span {
-    color: #FF433C;
+    color: red;
 }
 
 .about-short-brief p {
@@ -949,7 +996,7 @@ h2.style-title {
 
 .about2-exprience h3 span {
     font-weight: 700;
-    color: #FF433C;
+    color: red;
 }
 
 .about2-exprience h3 span b.counter {}
@@ -968,7 +1015,7 @@ h2.style-title {
 }
 
 .about2-short-brief h2 span {
-    color: #FF433C;
+    color: red;
 }
 
 .about2-short-brief>p {
@@ -1095,7 +1142,7 @@ h2.style-title {
 .single-count-box {
     display: block;
     position: relative;
-    background: #FF433C;
+    background: red;
     padding: 50px 0;
     transform: skew(6deg);
     z-index: 1;
@@ -1142,7 +1189,7 @@ h2.style-title {
     top: 15px;
     width: 20px;
     height: 20px;
-    border: 4px solid #FF433C;
+    border: 4px solid red;
     background: #111;
     border-radius: 50%;
     transform: skew(-6deg);
@@ -1155,7 +1202,7 @@ h2.style-title {
     bottom: 15px;
     width: 20px;
     height: 20px;
-    border: 4px solid #FF433C;
+    border: 4px solid red;
     background: #111;
     border-radius: 50%;
     transform: skew(-6deg);
@@ -1170,14 +1217,18 @@ h2.style-title {
 }
 
 /* services area css */
+.dark .services-bg{
+    background-image: url(assets/img/services/bg.jpg);
+    background-color: #1a2b3c;
+}
 .services-bg {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     height: 100%;
-    background-image: url(assets/img/services/bg.jpg);
-    background-color: #1a2b3c;
+    background-image: none;
+    background-color: #fbfbfb;
     background-repeat: no-repeat;
 }
 
@@ -1245,15 +1296,15 @@ h2.style-title {
 }
 
 .single-services-wrape:hover ::before {
-    border-color: #FF433C;
+    border-color: red;
 }
 
 .single-services-wrape:hover .single-services-icon span svg {
-    fill: #FF433C;
+    fill: red;
 }
 
 .single-services-wrape:hover h3 a {
-    color: #FF433C;
+    color: red;
 }
 
 .services-style-shape {
@@ -1270,7 +1321,7 @@ h2.style-title {
 }
 
 .single-services-wrape:hover .services-style-shape svg {
-    fill: #FF433C;
+    fill: red;
 }
 
 .single-services-icon span {
@@ -1596,7 +1647,7 @@ ul.portfolio-menu-wrape li.active:after {
 .single-testimonial-content svg {
     width: 80px !important;
     display: inline-block !important;
-    fill: #FF433C;
+    fill: red;
 }
 
 .single-testimonial-content h2 {
@@ -1630,7 +1681,7 @@ ul.portfolio-menu-wrape li.active:after {
 
 .all-testimonial .owl-nav div:hover {
     border-color: #ffffff !important;
-    color: #FF433C !important;
+    color: red !important;
 }
 
 .all-testimonial .owl-nav div.owl-next {
@@ -1731,21 +1782,21 @@ ul.portfolio-menu-wrape li.active:after {
 
 .single-awards-list:hover .awards-number,
 .single-awards-list:hover .awards-link a {
-    background-color: #FF433C;
+    background-color: red;
     color: #ffffff
 }
 
 .single-awards-list:hover .awards-number::after {
-    border-top-color: #FF433C;
+    border-top-color: red;
     border-right: 24px solid transparent;
 }
 
 .single-awards-list:hover .awards-web {
-    color: #FF433C;
+    color: red;
 }
 
 .single-awards-list:hover {
-    border-color: #FF433C;
+    border-color: red;
 }
 
 .hover-reveal {
@@ -1830,7 +1881,7 @@ ul.portfolio-menu-wrape li.active:after {
 }
 
 .team-popup-wrape a:hover {
-    background: #FF433C;
+    background: red;
     border-color: #fff;
 }
 
@@ -1882,8 +1933,8 @@ ul.team-social-wrape li {
 }
 
 ul.team-social-wrape li:hover a {
-    background: #FF433C;
-    border-color: #FF433C;
+    background: red;
+    border-color: red;
 }
 
 ul.team-social-wrape li a {
@@ -1929,7 +1980,7 @@ ul.team-social-wrape li a {
 }
 
 .khalif-all-team-area .active.center .team-popup-wrape a {
-    background: #FF433C;
+    background: red;
     border-color: #fff;
 }
 
@@ -1969,8 +2020,13 @@ ul.team-social-wrape li a {
 
 .single-price-area.active,
 .single-price-area:hover {
-    background-color: #FF433C !important;
+    background-color: #323232 !important;
     margin-top: -30px;
+}
+
+.dark .single-price-area.active,
+.dark .single-price-area:hover {
+    background-color: red !important;
 }
 
 .single-price-area.active.price-icon,
@@ -1996,6 +2052,10 @@ ul.team-social-wrape li a {
     font-family: "Antonio", sans-serif;
     transition: all 0.3s;
     margin-bottom: 22px;
+    color: #ffffff;
+}
+.price-header h2 p {
+    color: #ffffff;
 }
 
 .price-header h2>span.sep {
@@ -2014,6 +2074,7 @@ ul.team-social-wrape li a {
     text-transform: capitalize;
     font-size: 30px;
     font-family: "Antonio", sans-serif;
+    color: #ffffff;
 }
 
 .price-icon {
@@ -2027,7 +2088,7 @@ ul.team-social-wrape li a {
 
 .single-price-area:hover .price-icon svg,
 .single-price-area.active .price-icon svg {
-    fill: #FF433C;
+    fill: red;
 }
 
 .price-icon svg {
@@ -2048,7 +2109,7 @@ ul.team-social-wrape li a {
 
 .price-item-list li i {
     margin-right: 10px;
-    color: #FF433C;
+    color: red;
 }
 
 .price-item-list li:last-child {
@@ -2079,7 +2140,7 @@ ul.team-social-wrape li a {
 }
 
 .khalif-single-blog-wrape:hover h4 a.post-title {
-    color: #FF433C;
+    color: red;
 }
 
 .single-post-info {
@@ -2103,7 +2164,7 @@ ul.team-social-wrape li a {
 
 .single-post-info li:hover,
 .single-post-info li:hover a {
-    color: #FF433C;
+    color: red;
     cursor: pointer;
 }
 
@@ -2120,7 +2181,7 @@ ul.team-social-wrape li a {
     transition: all .3s;
     margin: 0 4px;
     border-radius: 50%;
-    border: 4px solid #FF433C;
+    border: 4px solid red;
     opacity: .5;
 }
 
@@ -2133,7 +2194,7 @@ ul.team-social-wrape li a {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 4px solid #FF433C;
+    border: 4px solid red;
 }
 
 .khalif-all-blog-list.owl-theme .owl-nav.disabled+.owl-dots {
@@ -2179,7 +2240,7 @@ ul.team-social-wrape li a {
 
 .post-details-info li:hover,
 .post-details-info li:hover a {
-    color: #FF433C;
+    color: red;
     cursor: pointer;
 }
 
@@ -2218,8 +2279,8 @@ ul.team-social-wrape li a {
 
 .post-details-tag>a:hover {
     color: #fff;
-    background-color: #FF433C;
-    border-color: #FF433C;
+    background-color: red;
+    border-color: red;
     border-radius: 10px;
 }
 
@@ -2227,7 +2288,7 @@ ul.team-social-wrape li a {
 blockquote,
 blockquote.wp-block-quote {
     background: #070707;
-    border-left: 6px solid #FF433C;
+    border-left: 6px solid red;
     padding: 40px 35px !important;
     border-radius: 6px;
     position: relative;
@@ -2279,7 +2340,7 @@ blockquote.wp-block-quote cite:before {
     bottom: 0;
     width: 10px;
     height: 2px;
-    background: #FF433C;
+    background: red;
     margin: 0 auto;
     top: 50%;
     left: 0;
@@ -2320,7 +2381,7 @@ blockquote.wp-block-quote cite:before {
 }
 
 .comments-box:hover {
-    border-color: #FF433C;
+    border-color: red;
 }
 
 .comments-avatar {
@@ -2329,7 +2390,7 @@ blockquote.wp-block-quote cite:before {
 }
 
 .comments-avatar img {
-    border: 1px solid #FF433C;
+    border: 1px solid red;
     border-radius: 50%;
     padding: 6px;
 }
@@ -2418,7 +2479,7 @@ blockquote.wp-block-quote cite:before {
 .post-comments-form input.form-control:focus {
     box-shadow: 0px 10px 14px 0px rgba(12, 0, 46, 0.06);
     outline: none;
-    border: 1px solid #FF433C;
+    border: 1px solid red;
 }
 
 /* breadcrumb area css */
@@ -2467,7 +2528,7 @@ blockquote.wp-block-quote cite:before {
 }
 
 .khalif-breadcrumb-content .breadcrumb .breadcrumb-item a {
-    color: #FF433C;
+    color: red;
     text-transform: capitalize;
 }
 
@@ -2537,7 +2598,7 @@ blockquote.wp-block-quote cite:before {
 }
 
 .contact-info-box:hover {
-    background: #FF433C !important;
+    background: red !important;
 }
 
 .contact-info-box:hover .contact-info-icon {
@@ -2604,7 +2665,7 @@ ul.contact-info li a {
     font-size: 200px;
     font-weight: 700;
     line-height: 1;
-    color: #FF433C;
+    color: red;
     margin-bottom: 40px;
 }
 
@@ -2630,7 +2691,7 @@ ul.contact-info li a {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: #FF433C;
+    background: red;
     right: 10%;
     top: 18%;
     opacity: .10;
@@ -2641,7 +2702,7 @@ ul.contact-info li a {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    background: #FF433C;
+    background: red;
     right: 4%;
     top: 35%;
     opacity: .40;
@@ -2667,7 +2728,7 @@ ul.contact-info li a {
     bottom: 0;
     width: 84px;
     height: 258px;
-    background: #FF433C;
+    background: red;
     transform: skew(-15deg);
     z-index: -1;
 }
@@ -2726,7 +2787,7 @@ ul.footer-contact-info li span:before {
     left: 0;
     top: 0;
     bottom: 0;
-    color: #FF433C;
+    color: red;
 }
 
 .khalif-copyright-content {
@@ -2747,7 +2808,7 @@ ul.footer-social li {
 
 ul.footer-social li:hover a i {
     background: #111;
-    color: #FF433C;
+    color: red;
 }
 
 ul.footer-social li a i {
@@ -2758,6 +2819,9 @@ ul.footer-social li a i {
     line-height: 50px;
     border: 1px solid #595959;
     border-radius: 50%;
+    color: #000000;
+}
+.dark ul.footer-social li a i{
     color: #fff;
 }
 .address{
@@ -2783,3 +2847,133 @@ ul.footer-social li a i {
         margin-top: 200px !important;
     }
 }
+
+
+/* Language Switcher */
+.language-selector-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  #language-selector {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  #language-selector option {
+    background: #fff;
+    color: #333;
+    padding: 10px;
+  }
+  
+  #language-selector::-ms-expand {
+    display: none;
+  }
+  
+  #language-selector::after {
+    content: '\25BC';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  
+  #language-selector option:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  #language-selector-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #language-selector-arrow::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .khalif-progress-wrape.mt-100.pt-100.pb-100 {
+    background-color: #e3e3e3;
+}
+.dark .khalif-progress-wrape.mt-100.pt-100.pb-100 {
+    background-color: #000;
+}
+  /* Dark Light */
+  /* Style the toggle container */
+.toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* Adjust the width for proper alignment and padding */
+    height: 30px; /* Adjust the height for proper alignment and padding */
+    background-color: #ccc; /* Background color for the toggle button */
+    border-radius: 20px; /* Round the edges */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the toggle indicator (slider) */
+  .toggle-label::before {
+    content: '';
+    position: absolute;
+    width: 30px; /* Width of the indicator */
+    height: 30px; /* Height of the indicator */
+    border-radius: 50%; /* Make it circular */
+    background-color: #fff; /* Color of the indicator in light mode */
+    top: 1px; /* Position the indicator */
+    transition: 0.4s; /* Transition for smooth sliding effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the indicator for dark mode */
+  .toggle-checkbox:checked + .toggle-label::before {
+    left: 30px; /* Slide the indicator to the right for dark mode */
+    background-color: #000; /* Color of the indicator in dark mode */
+  }
+  
+  /* Style the labels */
+  .dark-label,
+  .light-label {
+    flex: 1;
+    text-align: center;
+    transition: 0.4s; /* Transition for smooth label color change */
+  }
+  
+  /* Style the label text in light mode */
+  .dark-label {
+    color: #fff; /* Color for the "Dark" label in light mode */
+  }
+  
+  .light-label {
+    color: #333; /* Color for the "Light" label in light mode */
+  }
+  
+  /* Style the label text in dark mode */
+  .toggle-checkbox:checked + .toggle-label .dark-label {
+    color: #333; /* Color for the "Dark" label in dark mode */
+  }
+  
+  .toggle-checkbox:checked + .toggle-label .light-label {
+    color: #fff; /* Color for the "Light" label in dark mode */
+  }
+span.dark-label, span.light-label{
+    font-size: 10px !important;
+}    
+

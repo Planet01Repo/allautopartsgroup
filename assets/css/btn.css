@@ -63,13 +63,13 @@
 }
 
 .btn-2:hover {
-    background: #FF433C !important;
+    background: red !important;
     color: #fff;
 }
 
 .btn-2:hover:after {
     content: '';
-    border: 2px solid #FF433C;
+    border: 2px solid red;
 }
 
 .btn-3 {
@@ -94,8 +94,8 @@
 
 .btn-3:hover svg,
 .btn-3:hover {
-    color: #FF433C;
-    fill: #FF433C;
+    color: red;
+    fill: red;
 }
 
 .btn-4 {
@@ -118,7 +118,7 @@
 }
 
 .btn-4:hover {
-    background-color: #FF433C;
+    background-color: red;
 }
 
 .btn-5 {
@@ -144,7 +144,7 @@
 }
 
 .btn-5:hover {
-    background-color: #FF433C;
+    background-color: red;
     color: #fff;
 }
 

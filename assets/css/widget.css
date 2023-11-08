@@ -8,7 +8,7 @@
 }
 
 .single-sid-wdg:hover {
-    border-color: #FF433C;
+    border-color: red;
 }
 
 .single-sid-wdg h3 {
@@ -64,7 +64,7 @@ button.submit-btn {
     transition: all .3s;
 }
 button.submit-btn:hover{
-    background-color: #FF433C;
+    background-color: red;
 }
 .wdg-search-form input {
     height: 70px;
@@ -98,7 +98,7 @@ button.submit-btn:hover{
 }
 
 .single-wdg-post:hover {
-    border-color: #FF433C;
+    border-color: red;
 }
 
 .single-wdg-post:last-child {
@@ -131,7 +131,7 @@ button.submit-btn:hover{
 }
 
 .single-wdg-post:hover .wdg-post-content h5 a {
-    color: #FF433C;
+    color: red;
 }
 
 .wdg-post-content span {
@@ -164,7 +164,7 @@ button.submit-btn:hover{
 }
 
 .wdg-post-archive li:hover a {
-    color: #FF433C;
+    color: red;
 }
 
 .wdg-post-archive li a span {
@@ -220,8 +220,8 @@ button.submit-btn:hover{
 
 .single-sid-wdg .widget_tag_cloud .tagcloud a:hover {
     color: #fff;
-    background-color: #FF433C;
-    border-color: #FF433C;
+    background-color: red;
+    border-color: red;
     border-radius: 10px;
 }
 
@@ -249,7 +249,7 @@ button.submit-btn:hover{
 }
 
 .single-sid-wdg .widget_meta ul li:hover a {
-    color: #FF433C;
+    color: red;
 }
 
 
@@ -296,7 +296,7 @@ button.submit-btn:hover{
 }
 
 .custom-html-widget .footer-social li a:hover {
-    color: #FF433C;
+    color: red;
 }
 
 /* footer widget quick link  */
@@ -322,7 +322,7 @@ button.submit-btn:hover{
 }
 
 .khalif-footer-single-widget .widget_nav_menu .menu li a:hover {
-    color: #FF433C;
+    color: red;
     margin-left: 12px;
     font-family: 'Antonio', sans-serif;
 }
@@ -353,7 +353,7 @@ button.submit-btn:hover{
 }
 
 .khalif-footer-single-widget .widget_recent_entries ul li a:hover {
-    color: #FF433C;
+    color: red;
 }
 
 .khalif-footer-single-widget .widget_recent_entries ul li span {
@@ -381,7 +381,7 @@ button.submit-btn:hover{
 }
 
 .khalif-footer-single-widget .custom-html-widget .contact-details li:hover i {
-    background: #FF433C;
+    background: red;
     color: #fff;
 }
 
@@ -391,7 +391,7 @@ button.submit-btn:hover{
     font-size: 14px;
     background: #fff;
     text-align: center;
-    color: #FF433C;
+    color: red;
     line-height: 30px;
     border-radius: 50%;
     float: left;
